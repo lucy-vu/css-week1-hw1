@@ -11,8 +11,8 @@ body {
     background-color: #fbf8f2;
 }
 
-
 header {
+    background-color: #78350f;
     background: linear-gradient(135deg, #1f4037, #995c00, #d97706);
     padding: 35px 20px;
     text-align: center;
@@ -36,7 +36,6 @@ li {
 }
 */
 
-
 .skip-link {
     position: absolute;
     top: -50px;
@@ -55,7 +54,6 @@ li {
     top: 10px;
 }
 
-
 nav {
     display: inline-block;
     width: 80%;
@@ -70,8 +68,10 @@ nav ul {
     flex-wrap: wrap;
 }
 
-nav a {
-    color: #ffffff;
+
+nav a, 
+nav a:visited {
+    color: #ffffff !important;
     background-color: #1a1a1a;
     border: 2px solid #ffffff;
     padding: 10px 22px;
@@ -87,15 +87,16 @@ nav a {
 nav a:hover,
 nav a:focus {
     background-color: #ffffff;
-    color: #1a1a1a;
+    color: #1a1a1a !important;
     transform: translateY(-2px);
 }
+
 
 nav img {
     width: 10%;
 }
 
-/* Bo góc và tạo viền bóng cho ảnh đại diện chú cún ở Header */
+
 header > img {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -132,6 +133,7 @@ main a:hover {
     color: #d97706;
 }
 
+
 .grid {
     display: grid;
     grid-template-columns: 40% 40%;
@@ -141,7 +143,7 @@ main a:hover {
     margin-top: 20px;
 }
 
-
+/* 9. Tiêu chuẩn đề bài: Ảnh trong .grid rộng 100% kèm bo góc */
 .grid img {
     width: 100%;
     border-radius: 8px;
@@ -177,12 +179,13 @@ footer {
     margin-top: 40px;
 }
 
-footer a {
-    color: #fde68a;
+footer a,
+footer a:visited {
+    color: #fde68a !important;
     font-weight: bold;
     text-decoration: underline;
 }
 
 footer a:hover {
-    color: #ffffff;
+    color: #ffffff !important;
 }
